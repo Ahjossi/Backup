@@ -1,0 +1,12 @@
+{
+class: json
+project: C:\\Users\\user\\Downloads\\pig.spine
+output: C:/Users/user/Desktop/spine
+ignored: null
+extension: .json
+format: JSON
+nonessential: true
+prettyPrint: false
+createAtlas: false
+texturePacker: null
+}
