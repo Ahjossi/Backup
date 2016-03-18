@@ -1,0 +1,467 @@
+
+spine.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+기본 머리
+  rotate: false
+  xy: 2, 230
+  size: 381, 371
+  orig: 381, 371
+  offset: 0, 0
+  index: -1
+기본 오른쪽 눈
+  rotate: false
+  xy: 965, 166
+  size: 57, 48
+  orig: 57, 48
+  offset: 0, 0
+  index: -1
+기본 왼쪽 눈
+  rotate: false
+  xy: 385, 231
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+기본 입
+  rotate: true
+  xy: 976, 77
+  size: 87, 37
+  orig: 87, 37
+  offset: 0, 0
+  index: -1
+꼬리
+  rotate: true
+  xy: 948, 560
+  size: 127, 59
+  orig: 127, 59
+  offset: 0, 0
+  index: -1
+꼬리파츠2
+  rotate: true
+  xy: 1009, 660
+  size: 27, 13
+  orig: 27, 13
+  offset: 0, 0
+  index: -1
+꼬리파츠3
+  rotate: false
+  xy: 767, 2
+  size: 65, 46
+  orig: 65, 46
+  offset: 0, 0
+  index: -1
+눈썹 오른쪽2
+  rotate: false
+  xy: 834, 18
+  size: 49, 30
+  orig: 49, 30
+  offset: 0, 0
+  index: -1
+등 털1
+  rotate: true
+  xy: 964, 820
+  size: 135, 50
+  orig: 135, 50
+  offset: 0, 0
+  index: -1
+등 털2
+  rotate: false
+  xy: 2, 32
+  size: 152, 61
+  orig: 152, 61
+  offset: 0, 0
+  index: -1
+등 털3
+  rotate: false
+  xy: 2, 14
+  size: 62, 16
+  orig: 62, 16
+  offset: 0, 0
+  index: -1
+등 털4
+  rotate: true
+  xy: 976, 16
+  size: 59, 44
+  orig: 59, 44
+  offset: 0, 0
+  index: -1
+등 털5
+  rotate: true
+  xy: 385, 256
+  size: 22, 27
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+등 털6
+  rotate: true
+  xy: 385, 256
+  size: 22, 27
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+맨얼굴
+  rotate: false
+  xy: 642, 701
+  size: 320, 321
+  orig: 320, 321
+  offset: 0, 0
+  index: -1
+머리털1
+  rotate: false
+  xy: 342, 5
+  size: 76, 102
+  orig: 76, 102
+  offset: 0, 0
+  index: -1
+머리털3
+  rotate: false
+  xy: 208, 13
+  size: 132, 94
+  orig: 132, 94
+  offset: 0, 0
+  index: -1
+머리털5
+  rotate: true
+  xy: 672, 183
+  size: 95, 32
+  orig: 95, 32
+  offset: 0, 0
+  index: -1
+머리털6
+  rotate: true
+  xy: 964, 689
+  size: 129, 48
+  orig: 129, 48
+  offset: 0, 0
+  index: -1
+머리털7
+  rotate: true
+  xy: 965, 216
+  size: 110, 45
+  orig: 110, 45
+  offset: 0, 0
+  index: -1
+멧돼지 기본
+  rotate: false
+  xy: 2, 603
+  size: 638, 419
+  orig: 638, 419
+  offset: 0, 0
+  index: -1
+몸통
+  rotate: true
+  xy: 707, 406
+  size: 293, 239
+  orig: 293, 239
+  offset: 0, 0
+  index: -1
+오른쪽 귀
+  rotate: false
+  xy: 965, 328
+  size: 55, 109
+  orig: 55, 109
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리
+  rotate: true
+  xy: 568, 13
+  size: 119, 100
+  orig: 119, 100
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리 2
+  rotate: false
+  xy: 544, 134
+  size: 126, 144
+  orig: 126, 144
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리 발굽(발구르기용)
+  rotate: true
+  xy: 672, 136
+  size: 45, 26
+  orig: 45, 26
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리 파츠1
+  rotate: true
+  xy: 948, 439
+  size: 119, 69
+  orig: 119, 69
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리 파츠2
+  rotate: true
+  xy: 156, 14
+  size: 79, 50
+  orig: 79, 50
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리(발구르기용)
+  rotate: true
+  xy: 885, 33
+  size: 113, 89
+  orig: 113, 89
+  offset: 0, 0
+  index: -1
+오른쪽 송곳니
+  rotate: false
+  xy: 642, 615
+  size: 62, 84
+  orig: 62, 84
+  offset: 0, 0
+  index: -1
+오른쪽 앞 송곳니
+  rotate: true
+  xy: 834, 2
+  size: 14, 28
+  orig: 14, 28
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리
+  rotate: false
+  xy: 767, 50
+  size: 116, 96
+  orig: 116, 96
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리 2
+  rotate: true
+  xy: 420, 14
+  size: 111, 146
+  orig: 111, 146
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리 발굽(발구르기용)
+  rotate: false
+  xy: 66, 6
+  size: 45, 24
+  orig: 45, 24
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리
+  rotate: true
+  xy: 670, 12
+  size: 120, 95
+  orig: 120, 95
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리 2
+  rotate: false
+  xy: 414, 127
+  size: 128, 151
+  orig: 128, 151
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리 발굽(발구르기용)
+  rotate: false
+  xy: 113, 4
+  size: 40, 26
+  orig: 40, 26
+  offset: 0, 0
+  index: -1
+왼쪽 송곳니
+  rotate: true
+  xy: 964, 957
+  size: 65, 58
+  orig: 65, 58
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리 발굽(발구르기용)
+  rotate: false
+  xy: 885, 6
+  size: 45, 25
+  orig: 45, 25
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리2
+  rotate: false
+  xy: 707, 148
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+죽은 머리
+  rotate: false
+  xy: 385, 280
+  size: 320, 321
+  orig: 320, 321
+  offset: 0, 0
+  index: -1
+죽은 입 1
+  rotate: false
+  xy: 2, 95
+  size: 204, 133
+  orig: 204, 133
+  offset: 0, 0
+  index: -1
+죽은 입 2
+  rotate: false
+  xy: 208, 109
+  size: 204, 119
+  orig: 204, 119
+  offset: 0, 0
+  index: -1
+
+spine2.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+꼬리파츠1
+  rotate: false
+  xy: 284, 139
+  size: 37, 31
+  orig: 37, 31
+  offset: 0, 0
+  index: -1
+눈썹 오른쪽1
+  rotate: false
+  xy: 112, 121
+  size: 80, 44
+  orig: 80, 44
+  offset: 0, 0
+  index: -1
+눈썹 왼쪽
+  rotate: false
+  xy: 248, 131
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+머리털2
+  rotate: false
+  xy: 693, 181
+  size: 79, 73
+  orig: 79, 73
+  offset: 0, 0
+  index: -1
+머리털4
+  rotate: false
+  xy: 437, 134
+  size: 79, 41
+  orig: 79, 41
+  offset: 0, 0
+  index: -1
+머리털8
+  rotate: true
+  xy: 99, 2
+  size: 72, 47
+  orig: 72, 47
+  offset: 0, 0
+  index: -1
+머리털9
+  rotate: true
+  xy: 859, 193
+  size: 61, 71
+  orig: 61, 71
+  offset: 0, 0
+  index: -1
+오른쪽 뒷다리 파츠3
+  rotate: true
+  xy: 148, 20
+  size: 54, 44
+  orig: 54, 44
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리 파츠1
+  rotate: false
+  xy: 2, 82
+  size: 108, 87
+  orig: 108, 87
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리 파츠2
+  rotate: false
+  xy: 932, 190
+  size: 65, 64
+  orig: 65, 64
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리 파츠3
+  rotate: false
+  xy: 194, 122
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+오른쪽 앞다리(발구르기용)
+  rotate: false
+  xy: 119, 167
+  size: 108, 87
+  orig: 108, 87
+  offset: 0, 0
+  index: -1
+왼쪽 귀
+  rotate: false
+  xy: 437, 177
+  size: 81, 77
+  orig: 81, 77
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리 파츠1
+  rotate: false
+  xy: 2, 171
+  size: 115, 83
+  orig: 115, 83
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리 파츠2
+  rotate: false
+  xy: 112, 76
+  size: 81, 43
+  orig: 81, 43
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리 파츠3
+  rotate: false
+  xy: 195, 77
+  size: 51, 43
+  orig: 51, 43
+  offset: 0, 0
+  index: -1
+왼쪽 뒷다리(발구르기용)
+  rotate: false
+  xy: 2, 5
+  size: 95, 75
+  orig: 95, 75
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리
+  rotate: false
+  xy: 339, 168
+  size: 96, 86
+  orig: 96, 86
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리 파츠1
+  rotate: false
+  xy: 229, 172
+  size: 108, 82
+  orig: 108, 82
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리 파츠2
+  rotate: false
+  xy: 774, 189
+  size: 83, 65
+  orig: 83, 65
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리 파츠3
+  rotate: false
+  xy: 608, 185
+  size: 83, 69
+  orig: 83, 69
+  offset: 0, 0
+  index: -1
+왼쪽 앞다리(발구르기용)
+  rotate: false
+  xy: 520, 183
+  size: 86, 71
+  orig: 86, 71
+  offset: 0, 0
+  index: -1
