@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-static class Constancts//#define대신 ㅋ
+static class MonsterMonsterConstancts
 {
     //전처리할 내용을 넣어주세요 -> public const 형태 이름;
     public const string body01 = "shop_img02";
@@ -51,15 +51,15 @@ public class Monster : MonoBehaviour
     void Start()
     {
         var SkeletonRender = GetComponent<SkeletonRenderer>();
-        var attachMent = SkeletonRender.skeleton.Data.AddUnitySprite(slot, sprite[0], skin);
-        SkeletonRender.skeleton.SetAttachment(slot, sprite[0].name);
+        //var attachMent = SkeletonRender.skeleton.Data.AddUnitySprite(slot, sprite[0], skin);
+        //SkeletonRender.skeleton.SetAttachment(slot, sprite[0].name);
         playerTr = GameObject.FindWithTag("Player").GetComponent<Transform>();//플레이어 위치 가져옴
         monsterTr = GetComponent<Transform>();//내 위치정보 가져옴
         monsterGen = GameObject.Find("MonsterGenerator");
         nvAgent = GetComponent<NavMeshAgent>();//네비는 몬스터의 매시에이전트
         nvAgent.destination = playerTr.position;//네비가 가리키는 목표는 플레이어
-        atkColl = GetComponentInChildren<Collider>();//자식오브젝트에 있는 공격 콜리더 가져옴
-        nvAgent.Stop();                                            //nvAgent.acceleration;\
+        atkColl = GetComponentInChildren<Collider>();//자식오브젝트에 있는 공격범위 콜리더
+        nvAgent.Stop();
 
         if (this.transform.position.x > playerTr.position.x)
         {
@@ -76,10 +76,6 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (atkColl.enabled == true)
-        {
-            atkColl.enabled = false;
-        }*/
 
     }
     //몬스터 정보를 외부에서 초기화 하기위한 함수입니다.
@@ -159,7 +155,7 @@ public class Monster : MonoBehaviour
                 monsterState = MonsterState.ATK;
                 //공격 에니 set할것
                 //박스 알아서 만들어
-                Beated();
+                //Beated();
                 SetAnimation("test", true, 1.0f);
             }
             else if (dist <= traceDist)

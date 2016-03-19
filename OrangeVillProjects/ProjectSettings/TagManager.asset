@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WALL
   - MOBATK
+  - Monster
   layers:
   - Default
   - TransparentFX

@@ -34,7 +34,7 @@ public class Monster_Genratior : MonoBehaviour
     IEnumerator MonsterGen()
     {
         while (true) { 
-            int idx = Random.Range(0, 2);
+            int idx = Random.Range(0, 1);
             if(nowMonster < MonsterGenratiorConstancts.MAXMONSTER)
             {
                 Instantiate(monsterPrefabs[idx], points[idx].position, Quaternion.identity);
