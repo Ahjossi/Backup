@@ -129,7 +129,7 @@ public class Monster : MonoBehaviour
                     nvAgent.Stop();
                     break;
                 case MonsterState.ATK:
-                    atkColl.enabled = false;
+                    //atkColl.enabled = false;
                     if (this.transform.position.x > playerTr.position.x)
                     {
                         this.transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -185,7 +185,7 @@ public class Monster : MonoBehaviour
         else if (name == "test")
         {
             //atkColl.enabled = false;
-            StartCoroutine(MonsterAtk());
+            //StartCoroutine(MonsterAtk());
             monsterAnimation.state.SetAnimation(0, name, loop).TimeScale = speed;
             curAnimation = name;
         }

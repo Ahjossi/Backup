@@ -34,11 +34,15 @@ public class FollowCamera : MonoBehaviour {
         //{
                                                                       // forward(0,0,1) 위아래   up(0,1,0) 카메라 높이
             tr.position = Vector3.Lerp(tr.position, target.position - (target.forward * x) + (Vector3.up * z), Time.deltaTime * trace);
-            tr.position = new Vector3(Mathf.Clamp(transform.position.x, -10.0f, 10.0f), Mathf.Clamp(transform.position.y, -5.0f, 17.0f), Mathf.Clamp(transform.position.z, -40.0f, -25.0f));
-            tr.localRotation = Quaternion.Euler(20, 0, 0);
-            //카메라를 바라봄
-            //tr.LookAt(target.position);
-            //카메라 다운
+        //tr.position = new Vector3(Mathf.Clamp(transform.position.x, -10.0f, 10.0f), Mathf.Clamp(transform.position.y, -5.0f, 17.0f), Mathf.Clamp(transform.position.z, -40.0f, -25.0f));
+        tr.position = new Vector3(Mathf.Clamp(transform.position.x, -6.6f, 7.0f),
+Mathf.Clamp(transform.position.y, 0.0f, 3.0f),
+Mathf.Clamp(transform.position.z, -12.5f, -19.0f));
+        //tr.localRotation = Quaternion.Euler(20, 0, 0);
+        tr.localRotation = Quaternion.Euler(18.38f, 0, 0);
+        //카메라를 바라봄
+        //tr.LookAt(target.position);
+        //카메라 다운
         //}ws
         /*if(target.transform.position.x ==3)
         {

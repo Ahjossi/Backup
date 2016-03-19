@@ -15,8 +15,8 @@ static class XmlConstancts
     public const string MOBDBXML =      "/MonsterDB.xml";
     public const string MOBXMLNODE =    "MonsterInfo/Monster";
     public const string playerDbXml =   "/Player_db_Test.xml";
-    public const string objBindDbXml =  "/ObjBindDB.xml";
-    public const string BINDXMLNODE =    "BindInfo/Bind";
+    public const string OBJBINDXML =    "/ObjBindDB.xml";
+    public const string BINDXMLNODE =   "BindInfo/Bind";
 }
 
 [System.Serializable]
@@ -55,7 +55,7 @@ public class Bind_Info
 }
 public class XML_Parsing : MonoBehaviour
 {
-    static string path = Application.streamingAssetsPath + XmlConstancts.MOBDBXML;//xml파일 경로
+    static string path;//xml파일 경로
 
 
     [XmlArray("Player"), XmlArrayItem("PlayerInfo")]
@@ -64,7 +64,8 @@ public class XML_Parsing : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        monsters = Read(path);//시작시 리스트에 xml데이터를 넣는다.
+        path = Application.streamingAssetsPath;//xml파일 경로
+        monsters = Read(path + XmlConstancts.MOBDBXML);//시작시 리스트에 xml데이터를 넣는다.
     }
 
     // Update is called once per frame
@@ -92,7 +93,7 @@ public class XML_Parsing : MonoBehaviour
         XmlDocument Document = new XmlDocument();
         Document.Load(Path);
         XmlElement KeyList = Document.DocumentElement;//키 리스트를 문서의 항목을 사용한다?
-        XmlNodeList Nodes = Document.SelectNodes("MonsterInfo/Monster");//monsterinfo아래 Monster항목을 노드로 설정하여 하위항목을 불러오자
+        XmlNodeList Nodes = Document.SelectNodes(XmlConstancts.MOBXMLNODE);//monsterinfo아래 Monster항목을 노드로 설정하여 하위항목을 불러오자
         List<Monster_Info> tempList = new List<Monster_Info>();//반환을 위한 임시 리스트
 
         foreach (XmlNode xn in Nodes)
@@ -112,22 +113,44 @@ public class XML_Parsing : MonoBehaviour
         }
         return tempList;        
     }
-    public Bind_Info BindDBRead(string path)
+    public Bind_Info BindDBRead(string path, string id)
     {
-        Bind_Info temp_info = new Bind_Info();
+        Bind_Info bind_info = new Bind_Info();
         XmlDocument Document = new XmlDocument();
         Document.Load(path);
         XmlElement KeyList = Document.DocumentElement;
         XmlNodeList Nodes = Document.SelectNodes(XmlConstancts.BINDXMLNODE);
-
         foreach (XmlNode xn in Nodes)
         {
+            Bind_Info temp_info = new Bind_Info();
             temp_info.ID = xn["MixCode"].InnerText;
             temp_info.WeaponState = xn["Weapon_State"].InnerText;
             temp_info.ObjectCode = xn["Object_Code"].InnerText;
             temp_info.MixResult = xn["Mix_Result"].InnerText;
+            if (temp_info.ID == id)
+                bind_info = temp_info;
+            else
+                Debug.Log("아직 못찾음");
         }
-        return temp_info;
+        return bind_info;
+    }
+    public List<Bind_Info> BindDBListRead(string path)
+    {
+        List<Bind_Info> bind_list = new List<Bind_Info>();
+        XmlDocument Document = new XmlDocument();
+        Document.Load(path);
+        XmlElement KeyList = Document.DocumentElement;
+        XmlNodeList Nodes = Document.SelectNodes(XmlConstancts.BINDXMLNODE);
+        foreach (XmlNode xn in Nodes)
+        {
+            Bind_Info temp_info = new Bind_Info();
+            temp_info.ID = xn["MixCode"].InnerText;
+            temp_info.WeaponState = xn["Weapon_State"].InnerText;
+            temp_info.ObjectCode = xn["Object_Code"].InnerText;
+            temp_info.MixResult = xn["Mix_Result"].InnerText;
+            bind_list.Add(temp_info);
+        }
+        return bind_list;
     }
     public Monster_Info MonsterDbRead(string Path)//list사용 안하도록 재정의 하는 중
     {

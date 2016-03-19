@@ -16,7 +16,7 @@ public class forblog : MonoBehaviour {
     public float h = 0.0f;
     public float v = 0.0f;
     //캐릭터의 속도
-    public float walkSpeed = 15.0f;
+    public float walkSpeed = 1.0f;
     public float jumpSpeed = 0.1f;
     public bool isJump = false;
 
@@ -47,22 +47,22 @@ public class forblog : MonoBehaviour {
                 /*Vector2 tiling = transform.localScale;
                 tiling.x = -Mathf.Abs(tiling.x);
                 transform.localScale = tiling;*/
-                //transform.localRotation = Quaternion.Euler(0, 180, 0);
-                Player.Skeleton.FlipX = true;
+                transform.localRotation = Quaternion.Euler(22.9f, 0, 0);
+                //Player.Skeleton.FlipX = true;
                 TransformLimit();
                 //애니메이션
-                SetAnimation("run", true, 1.0f);
+                //SetAnimation("run", true, 1.0f);
             }
             else if(h<0)
             {
                 /* Vector2 tiling = transform.localScale;
                  tiling.x = Mathf.Abs(tiling.x);
                  transform.localScale = tiling;*/
-                //transform.localRotation = Quaternion.Euler(0, 0, 0);
-                Player.Skeleton.FlipX = false;
+                transform.localRotation = Quaternion.Euler(-22.9f, 180, 0);
+                //Player.Skeleton.FlipX = false;
                 TransformLimit();
                 //애니메이션
-                SetAnimation("run", true, 1.0f);
+                //SetAnimation("run", true, 1.0f);
             }
             else if (v > 0)
             {
@@ -83,7 +83,10 @@ public class forblog : MonoBehaviour {
     {
         movement.Set(h, 0, v);
         tr.Translate(movement.normalized * walkSpeed * Time.deltaTime, Space.World);
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -25.0f, 25.0f), Mathf.Clamp(transform.position.y, -8.0f, 8.0f), Mathf.Clamp(transform.position.z, -10.0f, 10.0f));
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, -25.0f, 25.0f), Mathf.Clamp(transform.position.y, -1.0f, 0.0f), Mathf.Clamp(transform.position.z, 20.0f, 25.0f));
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -6.6f, 7.0f), 
+            Mathf.Clamp(transform.position.y, 0.0f, 3.0f), 
+            Mathf.Clamp(transform.position.z, -19.5f, -12.5f));
     }
 
     void SetAnimation(string name, bool loop, float speed)
