@@ -42,6 +42,7 @@ public class Monster : MonoBehaviour
     public float Spd;
     public float Acc;
     public float AtkSpd;
+    //string WeekPoint;
     //private float moveSpeed = 0.05f;//몹 이속
     private float tPosition;//목표 방향
     private bool isDie = false;//몬스터 행동여부
@@ -73,11 +74,6 @@ public class Monster : MonoBehaviour
         StartCoroutine(MonsterStateCheck());
 
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     //몬스터 정보를 외부에서 초기화 하기위한 함수입니다.
     public void Insert(string i_id, string i_name, string i_kname,int i_etype,int i_type,
         int i_hp, int i_atk, float i_spd, float i_acc, float i_atkspd)
@@ -101,14 +97,14 @@ public class Monster : MonoBehaviour
             switch (monsterState)
             {
                 case MonsterState.IDLE:
-                    if (this.transform.position.x > playerTr.position.x)
+                    /*if (this.transform.position.x > playerTr.position.x)
                     {
                         this.transform.rotation = Quaternion.Euler(0, 0, 0);
                     }
                     else if (this.transform.position.x < playerTr.position.x)
                     {
                         this.transform.rotation = Quaternion.Euler(0, 180, 0);
-                    }
+                    }*/
                     break;
                 case MonsterState.DIE:
                     nvAgent.Stop();

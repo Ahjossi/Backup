@@ -31,7 +31,8 @@ public class BindControl : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate()
+    {
         if (Input.GetKeyDown(KeyCode.T))//조합키
         {
             StartCoroutine(CollAction());
@@ -50,14 +51,14 @@ public class BindControl : MonoBehaviour {
         //나중에 거리별로 우선순위 매겨서 저장할 것
         bindName = other.name;
         if (other.tag != "Monster" && isatk==false)
-        {
+        {//공격 x 몬스터 x
             BindSerch();
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
         else if (other.tag == "Monster" && MyWeapon.name == "Weapon_003(Clone)" && isatk == true)
-        {
+        {//공격 o 몬스터 o
             Debug.Log("잡았다");
-            Destroy(other.gameObject);
+            //other.gameObject.SendMessage()
         }
         
     }

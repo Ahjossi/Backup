@@ -4,10 +4,12 @@ using System.Collections;
 public class ObjBind : MonoBehaviour {
 
     public XML_Parsing xmlParsing;
-    public string ID;
-    public string WeaponState;
-    public string ObjectCode;
+    public string ID;//오브젝트 이름
+    public string WeaponState;//플레이어의 장비
+    public string ObjectCode;//
     public string MixResult;
+    //public int MaxUsing;
+
     // Use this for initialization
     void Awake()
     {
@@ -19,10 +21,10 @@ public class ObjBind : MonoBehaviour {
     {
         var temp = xmlParsing.BindDBRead(Application.streamingAssetsPath + XmlConstancts.OBJBINDXML, this.name);
         Insert(temp);
-        Debug.Log("나는" + ID + "다!");
+        /*Debug.Log("나는" + ID + "다!");
         Debug.Log("나는" + WeaponState + "다!");
         Debug.Log("나는" + ObjectCode + "다!");
-        Debug.Log("나는" + MixResult + "다!");
+        Debug.Log("나는" + MixResult + "다!");*/
     }
 	
 	// Update is called once per frame

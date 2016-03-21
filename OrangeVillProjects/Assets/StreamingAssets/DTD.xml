@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BindInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bind>
+		<Object_ID>Object_001</Object_ID>
+		<Object_Name>나무덩굴</Object_Name>
+		<Object_effect>effect_001</Object_effect>
+		<MixCode>Mix_001</MixCode>
+		<Weapon_State>Null</Weapon_State>
+		<Object_Code>Object_001</Object_Code>
+		<Mix_Result>Weapon_001</Mix_Result>
+	</Bind>
+	<Bind>
+		<Object_ID>Object_001</Object_ID>
+		<Object_Name>나무덩굴</Object_Name>
+		<Object_effect>effect_001</Object_effect>
+		<MixCode>Mix_001</MixCode>
+		<Weapon_State>Null</Weapon_State>
+		<Object_Code>Object_001</Object_Code>
+		<Mix_Result>Weapon_001</Mix_Result>
+	</Bind>
+	<code>
+		<Object_ID>Object_001</Object_ID>
+		<Object_Name>나무덩굴</Object_Name>
+	</code>
+	<code>
+		<Object_ID>Object_001</Object_ID>
+		<Object_Name>나무덩굴</Object_Name>
+	</code>
+</BindInfo>
